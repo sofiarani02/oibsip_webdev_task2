@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_new.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><b><a href="#header">Home</a></b></li>
+                    <li><b><a href="#about">About</a></b></li>
+                    <li><b><a href="#services">Services</a></b></li>
+                    <li><b><a href="#projects">Projects</a></b></li>
+                    <li><b><a href="#contact">Contact</a></b></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Sofia Rani</span></h1>
+                <p>Computer Science Engineering Student</p>
+            </div>
+        </div>
+    </div><hr>
+    <!-- -------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hardworking and organized individual seeking a challenging role in an environment 
+                        that will enhance my knowledge and creativity while adding value to the growth of the company. 
+                        I am responsible and committed in delivering results.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Soft Skills</span><br>Team Player<br>Communication<br>Time Management<br>Good Listener<br>Problem Solving</li>
+                            <li><span>Technical Skills</span><br> Java Programming<br>C Programming<br>MySQL<br>HTML CSS JavaScript<br>Video Editing(Canva)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oasis Infobyte - Web Development and Designing Intern | Jun 23</span><br>Gained hands-on experience in html, css and javascript by
+                                creating static websites.</li>
+                            <li><span>OpenWeaver - Full Stack Developer Intern | Oct 23</span><br>Built a AI-powered Research Paper Generator application using no code and low code openweaverstudio platform. </li>
+                            <li><span>Ingage Technologies - AR/VR Intern - 1 week</span><br>Transformative immersive technology learning with Blender and
+                                Unity software by building a 3D animated conference hall.</li>
+                            <li><span>Twowaits Technologies - Python Programming | Feb 22</span><br>Self-paced internship that provides fundamental knowledge
+                                about Python programming through mini Alexa project.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>Loyola-ICAM College of Engineering and Technology</b></span><br>B.E Computer Science and Engineering <br> 2020 - 2024 <br> 8.53 CGPA (upto 6rd sem)
+                            </li>
+                            <li><span><b>Shri Natesan Vidyasala Matric.Hr.sec.school</b></span><br>High School (Computer Science), 2020<br>79%</li>
+                            <li><span><b>St.Sebastian Matric.Hr.Sec.School</b></span><br>Secondary School, 2018 <br>83%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------services------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Proficient in HTML, CSS and JavaScript, had an experience in creating visually appealing and user-friendly websites. 
+                        I develop responsive sites that optimize user engagement. Skilled in UI/UX principles and utilizing frameworks like 
+                        Bootstrap. I craft compelling online presences that effectively communicate brand identity.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Design</h2>
+                    <p>During my internship in the graphic design field, I gained hands-on experience in creating visually captivating materials 
+                        for business and marketing purposes. <br> I successfully designed eye-catching posters, logos, presentations, and videos. 
+                        Through this internship, <br> I honed my skills in utilizing various design software and tools.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I gained experience creating an Android app using Android Studio during a pre-final year project. <br> I successfully 
+                        integrated multiple activities, incorporated API functionality for map location, and utilized various development tools. 
+                        This hands-on experience enhanced my skills in programming languages, user interface design, and problem-solving.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------projects------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Soil Quality Tester</h3>
+                        <p>The objective of the project was to provide users with real-time information about soil quality 
+                            parameters such as soil nutrient levels (NPK), soil moisture, temperature, and humidity. 
+                            Additionally, it includes a feature that displays the map location of 
+                            nearby fertilizer shops and suggests suitable crops based on the soil quality analysis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Smart Bin Project</h3>
+                        <p>The Smart Bin project revolutionizes waste management by separating dry and wet waste and measures the level 
+                            of waste within the bin and automatically sends alert messages to the government when waste level reaches the 
+                            threshold. This system reduces the time required for waste separation, eliminates the need for manual 
+                            monitoring to avoid overflow of waste and enhances the overall effectiveness of waste management practices.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>AR/VR Project</h3>
+                        <p>AR/VR Project offers a transformative learning experience in immersive technology, focusing on the utilization 
+                            of Blender and Unity software by building a 3D animated conference hall, employing various tools and 
+                            techniques within the software. This project cultivates creativity in designing interactive and engaging 
+                            virtual spaces for diverse applications.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#projects" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sofiarani3121@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9820374893</p>
+                    <div class="social-icons">
+                        <a href="##contact"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="##contact"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="##contact"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="##contact"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Sofia. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script> //tabs in about section
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    <script> //menu bar
+        var sidemenu = document.getElementById("sidemenu");
+
+        // Get all the anchor tags within the side menu
+        var menuLinks = sidemenu.getElementsByTagName("a");
+
+        // Loop through each menu link and attach a click event listener
+        for (var i = 0; i < menuLinks.length; i++) {
+        menuLinks[i].addEventListener("click", closemenu);
+        }
+
+        function openmenu() {
+        sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+        sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script> //contact form
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyr2ttNd3CctfwmhHGrsPjKRuNv8AX8zUgB3v62WFEVO6qRt1QzxJCyskGCE5m0ZqD0/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully" 
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script> // Redirect to top of the page on refresh
+        if (window.performance && window.performance.navigation.type === 1) {
+            window.location.href = "#header";
+        }
+      </script>
+</body>
+</html>
